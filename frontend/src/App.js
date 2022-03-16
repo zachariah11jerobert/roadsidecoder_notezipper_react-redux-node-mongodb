@@ -1,13 +1,5 @@
 import "./App.css";
 
-function App() {
-  const hello = 1;
-  return (
-    <>
-      <div className="App">Hello world{1}</div>; ello = 1;
-      <div className="App">Hello world 2</div>
-    </>
-  );
-}
+const App = () => <h1 className="App">Hello world</h1>;
 
 export default App;
