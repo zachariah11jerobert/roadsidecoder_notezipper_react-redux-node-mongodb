@@ -1,5 +1,16 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import { BrowserRouter, Route } from "react-router-dom";
 
-const App = () => <h1 className="App">Hello world</h1>;
+const App = () => (
+  <BrowserRouter>
+    <Header />
+    <main>
+      <Route path="/" component={LandingPage} />
+    </main>
+    <Footer />
+  </BrowserRouter>
+);
 
 export default App;
